@@ -75,7 +75,7 @@ O controle permite posicionar o braço (cima/baixo) e acionar a garra (abrir/fec
 
 > ⚠️ Comandos aceitam letras maiúsculas ou minúsculas. Espaços e quebras de linha são ignorados.
 
-### Sequência de captura de amostra (exemplo)
+### Sequência de captura de amostra
 
 ```
 H   → Posição inicial
@@ -105,13 +105,13 @@ S   → Verifica ângulos finais
 
 | Arquivo | Descrição |
 |---|---|
-| `model/garra_braco_robotico.scad` | Projeto nativo OpenSCAD (editável) |
+| `model/garra_braco_robotico.scad` | Projeto nativo OpenSCAD |
 
 ### Peças modeladas
 
 1. **Base da garra** — suporte estrutural com slot para servo SG90 (9g)
 2. **Dedo esquerdo / Direito** — dedos articulados com gancho de captura
-3. **Elo do braço (link)** — segmento de articulação entre servos
+3. **Elo do braço** — segmento de articulação entre servos
 
 ## 🗂️ Estrutura do Repositório
 
@@ -119,15 +119,17 @@ S   → Verifica ângulos finais
 braço-robotico-docking/
 │
 ├── src/
-│   └── braco_robotico.ino        # Código-fonte Arduino
+│   ├── braco_robotico.ino        # Código-fonte Arduino
+│   └── wokwi_diagram.json       
+│
 │
 ├── model/
 │   ├── garra_braco_robotico.scad # Projeto nativo OpenSCAD
-│   └── garra_braco_robotico.stl  # Malha STL para impressão
+│   └── garra_braco_robotico.stl  # Malha STL
 │
 ├── images/
-│   ├── circuito_simulador.png    # Print do circuito no Wokwi
-│   └── modelo_3d_render.png      # Render da garra modelada
+│   ├── simulador.png             # Print do circuito no Wokwi
+│   └── braco_robotico.png        # Print da garra modelada
 │
 └── README.md                     # Este documento
 ```
@@ -136,8 +138,8 @@ braço-robotico-docking/
 
 ## 🛠️ Como compilar e carregar o firmware
 
-1. Instale o [Arduino IDE](https://www.arduino.cc/en/software) (versão 1.8+ ou 2.x)
-2. A biblioteca **Servo.h** já está incluída na IDE padrão — nenhuma instalação extra é necessária
+1. Instale o [Arduino IDE](https://www.arduino.cc/en/software)
+2. A biblioteca **Servo.h**
 3. Abra `src/braco_robotico.ino`
 4. Selecione a placa: **Arduino Uno**
 5. Selecione a porta COM correspondente
