@@ -8,11 +8,11 @@
 
 | Nome completo | RM |
 |---|---|
-| *(Debora da Silva Amaral)* | *(550412)* |
-| *(Eduardo Pielich Sanchez)* | *(99767)* |
-| *(Gabriel Machado Carrara Pimentel)* | *(99880)* |
-| *(Livia Namba Seraphim)* | *(97819)* |
-| *(Vitor Hugo Gonçalves Rodrigues)* | *(97758)* |
+| *Debora da Silva Amaral* | *550412* |
+| *Eduardo Pielich Sanchez* | *99767* |
+| *Gabriel Machado Carrara Pimentel* | *99880* |
+| *Livia Namba Seraphim* | *97819* |
+| *Vitor Hugo Gonçalves Rodrigues* | *97758* |
 
 ---
 
@@ -20,8 +20,8 @@
 
 | Recurso | Link |
 |---|---|
-| 🔌 Simulador (Wokwi) | **[Abrir projeto no Wokwi](https://wokwi.com/projects/466018976755786753)** ← *substituir pelo link público* |
-| 📁 Repositório GitHub | *(link deste repo)* |
+| 🔌 Simulador (Wokwi) | **[Abrir projeto no Wokwi](https://wokwi.com/projects/466018976755786753)** |
+| 📁 Repositório GitHub | **[Repositório](https://github.com/DeboraAmaral/GS_MAKER_LAB)** |
 
 ---
 
