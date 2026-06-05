@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "author": "Debora da Silva Amaral - RM550412, Eduardo Pielich Sanchez - RM99767, Gabriel Machado Carrara Pimentel - RM99880, Livia Namba Seraphim - RM97819, Vitor Hugo Gonçalves Rodrigues - RM97758",
+  "editor": "Debora da Silva Amaral - RM550412, Eduardo Pielich Sanchez - RM99767, Gabriel Machado Carrara Pimentel - RM99880, Livia Namba Seraphim - RM97819, Vitor Hugo Gonçalves Rodrigues - RM97758",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 80,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": -60,
+      "left": 260,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo2",
+      "top": 120,
+      "left": 260,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 80,
+      "left": -140,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 116,
+      "left": -80,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    ["uno:GND.1",  "servo1:GND", "black",  ["h20", "v-40"]],
+    ["uno:5V",     "servo1:V+",  "red",    ["h30", "v-60"]],
+    ["uno:9",      "servo1:PWM", "orange", ["h10", "v-80"]],
+
+    ["uno:GND.2",  "servo2:GND", "black",  ["h20", "v20"]],
+    ["uno:5V",     "servo2:V+",  "red",    ["h30", "v40"]],
+    ["uno:10",     "servo2:PWM", "orange", ["h10", "v60"]],
+
+    ["uno:13",     "r1:1",       "green",  ["h-20"]],
+    ["r1:2",       "led1:A",     "green",  ["h-10"]],
+    ["led1:C",     "uno:GND.3",  "black",  ["v40", "h60"]]
+  ],
+  "dependencies": {}
+}
